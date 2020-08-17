@@ -1,0 +1,202 @@
+ *{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+	
+}
+body {
+	background-image: url(./img/fondo1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header {
+	 max-width:100%;
+	position:relative;
+}
+header nav{
+	width: 90%;
+	max-width: 50%;
+	margin: 20px auto;
+	background: cornsilk;
+	
+}
+.menu_bar{
+	display: none;
+}
+header nav ul{
+	overflow: hidden;
+	list-style: none;
+}
+header nav ul li{
+	float:left;
+}
+header nav ul li a{
+	color:rgb(15, 15, 15);
+	padding: 10px 30px;
+	display:block;
+	text-decoration: none;
+}
+header nav ul li a:hover{
+	background: rgba(13, 68, 248, 0.911);
+}
+section{
+	padding:20px ;
+}
+.select {
+	background-color: rgb(11, 210, 245);
+	border: 2px solid rgb(57, 27, 230);
+	border-radius: 5px;
+	display: block;
+	font-size: 22px;
+	padding: 15px 20px;
+	margin: 20px auto;
+	outline: none;
+  }
+
+.pokemon {
+	display:flexbox;
+	border: 5px double rgb(68, 0, 255);
+	width: 100px;
+	margin-top: 15px;
+	margin-left: 15px;
+	background: rgb(93, 82, 248);
+	
+}
+.pokemon h2{
+  font-size: 16px;
+}
+.pokemonContainer{
+	margin:20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	
+	
+}
+
+.imgPokemon {
+	width: 100%;
+	flex-direction: column;
+	display: flex;
+	filter: drop-shadow(40px 40px 40px #444);
+	box-shadow: 
+	inset 0 -3em 3em rgba(12, 245, 245, 0.911), 
+		  0 0  0 2px rgb(57, 8, 235),
+		  0.3em 0.3em 1em rgba(12, 12, 12, 0.3);
+}
+.container-footer{
+	width: 100%;
+	padding: 40px 0;
+	background-color: rgba(30, 15, 235, 0.89);
+	margin-top: 20px;
+}
+
+.container-footer footer{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.container-footer footer .logo-footer{
+	text-align: center;
+}
+
+.container-footer footer .logo-footer img{
+	width: 100px;
+}
+
+.container-footer footer .redes-footer{
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+.container-footer footer .redes-footer .icon-red-footer{
+	font-size: 20px;
+	margin: 20px;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	color:black;
+}
+
+.container-footer footer .redes-footer .fa-facebook:hover{
+	background: #41579a;
+	color:white;
+}
+
+.container-footer footer .redes-footer .fa-twitter:hover{
+	background: #4470f7;
+	color: #fff;
+}
+
+.container-footer footer .redes-footer .fa-instagram:hover{
+	background:linear-gradient(to top right, #FCDE30,#E9712A,#D2313B,#AE4198,#7540A1,#5443A8);
+	color: #fff;
+}
+.container-footer footer hr{
+	margin-top: 20px;
+	border: none;
+	height: 2px;
+	background: #a8a8a87a;
+}
+.container-footer footer h4{
+	text-align: center;
+	font-size: 20px;
+	margin-top: 40px;
+	color: #131212;
+	font-weight: 500;
+	font-weight: inherit;
+}
+
+	
+	
+
+
+
+
+/*
+@media screen and (max-width:800px){
+	header nav {
+		margin-top: 20px;
+		width: 80%;
+		height: 50%;
+		margin:0;
+		position:relative;
+}
+.container {
+	width:100%;
+	overflow: hidden;
+}
+header nav ul li {
+	display: block;
+	float:none;
+	border-bottom:1px solid rgba(255,255,255.3);
+
+}
+.menu_bar{
+	display:block;
+	width:100%;
+	background: darkblue;
+}
+.menu_bar .bt- menu{
+	display:block;
+	padding: 20px;
+	background: darkcyan;
+	color:black;
+	text-decoration: none;
+	font-weight: bold;
+	font-size:25px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+}
+
+
+	

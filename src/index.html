@@ -4,9 +4,89 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+    <script src = " https://use.fontawesome.com/d67be6ec35.js " > </script>		
+    <meta name ="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+  </head> 
   <body>
-    <div id="root"></div>
+    <!--encabezado logo y menu-->
+    <div class= "container">
+      <header>
+        <div>
+          <img src="img/logo.png" class="logo" width="25%"> 
+        </div>
+        <header class="header">
+
+          <nav>
+              <i id="menuTrigger" class="fas fa-bars"></i>
+        <ul class="header__menu header__menu__position" id="menu">
+          <li>
+            <a class="header__link header__link__active" href="#inicio">
+              INICIO
+            </a>
+          </li>
+              <li>
+                <a class="header__link" href="#buscar">
+                  ELEMENTOS
+                </a>
+              </li>
+              <li>
+                <a class="header__link" href="#evoluciones">
+                  EVOLUCIONES
+                </a>
+              </li>
+              <li>
+                <a class="header__link" href="#caramelos">
+                  CARAMELOS
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+    <!--contenido todos los pokemons-->
+    
+    <div class ="pokemonContainer" id = "pokemon"></div>
+     <!--Busqueda por elementos-->
+    <div id="buscar" class="paginas hidden">
+      <h2>ELEMENTOS</h2>
+      <label>Filtrar pokemon por elemento</label>
+      <select name="selectType" id="buscar__type" class="select">
+        <option selected value="">Elige una opcion</option> 
+        <option value="Grass">Hierba</option> 
+        <option value="Poison">Veneno</option>
+        <option value="Fire">Fuego</option>
+        <option value="Flying">Volador</option> 
+        <option value="Water">Agua</option>
+        <option value="Bug">Insecto</option>
+        <option value="Normal">Normal</option> 
+        <option value="Ground">Tierra</option>
+        <option value="Electrc">Electricoo</option>
+        <option value="Fighting">Lucha</option> 
+        <option value="Psichic">Psiquico</option>
+        <option value="Rock">Roca</option>
+        <option value="Ice">Hielo</option> 
+        <option value="Ghost">Fantasma</option>
+        <option value="Dragon">Dragon</option>
+      </select>  
+      <section class="pokemonContainer" id="FiltroPokemons">
+      </section>        
+    </div>
+    <div class="container-footer">
+      <footer>
+          <div class="logo-footer">
+            <img src="img/logo.PNG" alt="" width="25%">
+          </div>
+  
+          <div class="redes-footer">
+            <a href="#"><i class="fab fa-facebook icon-red-footer"></i></a>
+            <a href="#"><i class="fab fa-instagram icon-red-footer"></i></a>
+            <a href="#"><i class="fab fa-twitter icon-red-footer"></i></a>
+          </div>
+        <hr>
+        <h4>Todos los derechos reservados 2020 Developers </h4>
+      </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <script src="main.js" type="module"></script>
   </body>
 </html>
